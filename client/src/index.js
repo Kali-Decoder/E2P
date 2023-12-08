@@ -5,13 +5,22 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "@rainbow-me/rainbowkit/styles.css";
-
+import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { wagmiConfig, chains } from "./web3-services/wallet.js";
+import { WagmiConfig } from "wagmi";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <WagmiConfig config={wagmiConfig}>
+       <RainbowKitProvider chains={chains}>
+      <BrowserRouter>
+        <ToastContainer />
+        <App />
+        </BrowserRouter>
+        </RainbowKitProvider>
+    </WagmiConfig>
   </React.StrictMode>
 );
 
