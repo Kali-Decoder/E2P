@@ -8,6 +8,7 @@ import "@rainbow-me/rainbowkit/styles.css";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { wagmiConfig, chains } from "./web3-services/wallet.js";
 import { WagmiConfig } from "wagmi";
+import { UserContextProvider } from "./context/DataContext.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,8 +17,10 @@ root.render(
     <WagmiConfig config={wagmiConfig}>
        <RainbowKitProvider chains={chains}>
       <BrowserRouter>
+      <UserContextProvider>
         <ToastContainer />
         <App />
+        </UserContextProvider>
         </BrowserRouter>
         </RainbowKitProvider>
     </WagmiConfig>
