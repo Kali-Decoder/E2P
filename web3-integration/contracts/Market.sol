@@ -3,10 +3,10 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-
+import "./InterfaceAnon.sol";
 contract EnergyMarket {
     using SafeERC20 for IERC20;
-
+    address public anonAadhaarVerifierAddr;
     address public seller;
     IERC20 public energyToken;
 
@@ -28,16 +28,20 @@ contract EnergyMarket {
     event Withdraw(address indexed user, uint256 amount);
 
     uint userID;
-    constructor(address _energyToken) {
+    constructor(address _energyToken,address _verifierAddr) {
         energyToken = IERC20(_energyToken);
+        anonAadhaarVerifierAddr = _verifierAddr;
     }
 
     modifier onlyRegisteredUser() {
         require(userProfiles[msg.sender].isRegistered, "User not registered");
         _;
     }
-
-    function registerUser() external {
+    function verify(uint256[2] calldata _pA, uint[2][2] calldata _pB, uint[2] calldata _pC, uint[34] calldata _pubSignals) public view returns (bool) {
+        return InterfaceAnon(anonAadhaarVerifierAddr).verifyProof(_pA, _pB, _pC, _pubSignals);
+    }
+    function registerUser(uint256[2] calldata _pA, uint[2][2] calldata _pB, uint[2] calldata _pC, uint[34] calldata _pubSignals) external {
+        require(verify(_pA, _pB, _pC, _pubSignals), "Your idendity proof is not valid");//Aadhar verification
         userID++;
         require(!userProfiles[msg.sender].isRegistered, "User already registered");
         userProfiles[msg.sender].isRegistered = true;
