@@ -23,6 +23,12 @@ function App() {
         <Route path="/user-dashboard" exact element={<UserDashboard/>} />
         <Route path="/marketplace" exact element={<MarketPlace />} />
         <Route path="/explore" exact element={<Explore />} />
+        <Route
+          path="/:id/substations"
+          exact
+          element={<SubstationMarketPlace />}
+        />
+        <Route path="/invoice" exact element={<InvoiceGenerator/>}/>
       </Routes>
       
     </>
