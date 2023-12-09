@@ -1,11 +1,23 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { FaIndustry, FaUserTie } from "react-icons/fa";
 import { useUserDataContext } from "../context/DataContext";
 import Confetti from "react-confetti";
+import { AnonAadhaarPCD, exportCallDataGroth16FromPCD } from "anon-aadhaar-pcd";
 const RegisterUser = () => {
+  const [pcd, setPcd] = useState();
+  useEffect(() => {
+    if (anonAadhaar.status === "logged-in") setPcd(anonAadhaar.pcd);
+  }, [anonAadhaar]);
   const [selectedFile, setSelectedFile] = useState("");
   const { onRegisterUser, confetti } = useUserDataContext();
+
+
+
+const registerUser = async (rating, _pcd) => {
+  const { a, b, c, Input } = await exportCallDataGroth16FromPCD(_pcd);
+  
+};
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setSelectedFile(file);
