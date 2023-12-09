@@ -6,6 +6,7 @@ import BackGradients from "./components/BackGradients";
 import Explore from "./pages/Explore";
 import MarketPlace from "./pages/MarketPlace";
 import RegisterUser from "./pages/RegisterUser";
+import UserDashboard from "./pages/UserDashboard";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         </>} />
         <Route path="/auth" exact element={<Authscreen />} />
         <Route path="/register" exact element={<RegisterUser />} />
+        <Route path="/user-dashboard" exact element={<UserDashboard/>} />
         <Route path="/marketplace" exact element={<MarketPlace />} />
         <Route path="/explore" exact element={<Explore />} />
       </Routes>
