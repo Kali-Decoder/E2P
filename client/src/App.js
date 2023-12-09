@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandingPage";
 import { Routes, Route } from "react-router-dom";
 import BackGradients from "./components/BackGradients";
 import RegisterUser from "./pages/RegisterUser";
+import UserDashboard from "./pages/UserDashboard";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         </>} />
         <Route path="/auth" exact element={<Authscreen />} />
         <Route path="/register" exact element={<RegisterUser />} />
+        <Route path="/user-dashboard" exact element={<UserDashboard/>} />
       </Routes>
       
     </>
