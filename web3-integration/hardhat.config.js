@@ -16,6 +16,10 @@ module.exports = {
     matic:{
       url: "https://rpc-mainnet.maticvigil.com",
       accounts: [PRIVATE_KEY]
+    },
+    Alfajores:{
+      url: "https://alfajores-forno.celo-testnet.org",
+      accounts: [PRIVATE_KEY]
     }
   },
   etherscan: {
