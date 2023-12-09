@@ -4,9 +4,12 @@ import LandingPage from "./pages/LandingPage";
 import { Routes, Route } from "react-router-dom";
 import BackGradients from "./components/BackGradients";
 import Explore from "./pages/Explore";
+import SubstationMarketPlace from "./pages/SubstationMarketPlace";
 import MarketPlace from "./pages/MarketPlace";
 import RegisterUser from "./pages/RegisterUser";
 import UserDashboard from "./pages/UserDashboard";
+import InvoiceGenerator from "./components/InvoiceGenerator";
+
 function App() {
   return (
     <>

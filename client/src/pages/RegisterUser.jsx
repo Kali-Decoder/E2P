@@ -3,15 +3,15 @@ import React, { useState,useEffect } from "react";
 import { FaIndustry, FaUserTie } from "react-icons/fa";
 import { useUserDataContext } from "../context/DataContext";
 import Confetti from "react-confetti";
-import { AnonAadhaarPCD, exportCallDataGroth16FromPCD } from "anon-aadhaar-pcd";
-import { AnonAadhaarProvider } from "anon-aadhaar-react";
+// import { AnonAadhaarPCD, exportCallDataGroth16FromPCD } from "anon-aadhaar-pcd";
+// import { AnonAadhaarProvider } from "anon-aadhaar-react";
 const RegisterUser = () => {
 //   const [pcd, setPcd] = useState();
 //   useEffect(() => {
 //     if (anonAadhaar.status === "logged-in") setPcd(anonAadhaar.pcd);
 //   }, [anonAadhaar]);
-//   const [selectedFile, setSelectedFile] = useState("");
-//   const { onRegisterUser, confetti } = useUserDataContext();
+  const [selectedFile, setSelectedFile] = useState("");
+  const { onRegisterUser, confetti } = useUserDataContext();
 
 
 
@@ -33,7 +33,7 @@ const RegisterUser = () => {
         className="form-wrapper 
          min-h-screen
          [ p-0 md:p-0 lg:p-0 ]
-         [ flex justify-center flex-col items-center ] bg-black"
+         [ flex justify-center flex-col items-center ] bg-black "
       >
         <div
           className="
@@ -42,11 +42,11 @@ const RegisterUser = () => {
                 w-[50%]
                text-[#1A2421]
                bg-black
-               [ p-8 md:p-10 lg:p-10 ]
+               [ p-8 md:p-10 lg:p-10 ] border
                "
         >
           <h1 className="mb-6 uppercase  text-blue-300 font-bold [ text-xl md:text-xl lg:text-xl ]">
-            Register client
+            Registeration
           </h1>
           <label
             for="name"
@@ -172,7 +172,7 @@ const RegisterUser = () => {
               style={{ maxWidth: "50%", maxHeight: "100px" }}
             />
           ) : (
-            <p>File preview not available for this file type.</p>
+            <p className="mt-4">File preview not available for this file type.</p>
           )}
           <div className="mt-3">
             <ConnectButton />
