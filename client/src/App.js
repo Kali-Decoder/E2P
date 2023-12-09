@@ -9,6 +9,8 @@ import MarketPlace from "./pages/MarketPlace";
 import RegisterUser from "./pages/RegisterUser";
 import UserDashboard from "./pages/UserDashboard";
 import InvoiceGenerator from "./components/InvoiceGenerator";
+import LandingPage2 from "./pages/LandingPage2";
+import UserTransaction from "./pages/UserTransaction";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         <BackGradients page="home" />
         </div>
         </>} />
+        <Route path="/l2" exact element={<LandingPage2/>} />
         <Route path="/auth" exact element={<Authscreen />} />
         <Route path="/register" exact element={<RegisterUser />} />
         <Route path="/user-dashboard" exact element={<UserDashboard/>} />
@@ -32,6 +35,7 @@ function App() {
           element={<SubstationMarketPlace />}
         />
         <Route path="/invoice" exact element={<InvoiceGenerator/>}/>
+        <Route path="/usertx" exact element={<UserTransaction/>} />
       </Routes>
       
     </>
