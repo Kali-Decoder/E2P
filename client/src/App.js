@@ -15,6 +15,8 @@ function App() {
         <BackGradients page="home" />
         </div>
         </>} />
+        <Route path="/auth" exact element={<Authscreen />} />
+        <Route path="/register" exact element={<RegisterUser />} />
       </Routes>
       
     </>
