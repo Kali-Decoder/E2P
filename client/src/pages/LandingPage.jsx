@@ -10,6 +10,8 @@ import { TbBusinessplan } from "react-icons/tb";
 import axios from "axios";
 import { useMediaQuery } from "react-responsive";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import BackGradients from "../components/BackGradients";
+
 
 const LandingPage = () => {
   // const [imageUrl,setImageUrl] = useState("");
@@ -59,6 +61,7 @@ const LandingPage = () => {
 
   return (
     <>
+    
       {!isTablet && (
         <section className="w-full px-8 text-gray-700 bg-black overflow-x-hidden">
           <div className=" flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-6xl">
@@ -79,23 +82,23 @@ const LandingPage = () => {
               </a>
             </div>
 
-            <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
+            <div className="inline-flex items-center mx-4 space-x-4 lg:justify-end">
               <nav className="flex flex-wrap justify-center items-center mb-0 text-base  md:border-gray-200">
                 <a
                   href="#_"
-                  className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
+                  className="mr-4 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
                 >
                   Home
                 </a>
                 <a
                   href="#features"
-                  className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
+                  className="mr-4 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
                 >
                   Features
                 </a>
                 <a
                   href="#usecases"
-                  className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
+                  className="mr-4 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
                 >
                   Use-Cases
                 </a>
@@ -277,22 +280,22 @@ const LandingPage = () => {
         </section>
       )}
       <section className="w-full bg-black" id="features">
-        <div className="box-border flex flex-col items-center content-center  mx-auto leading-6 text-black  md:flex-row max-w-7xl mb-10">
-          <div className="box-border relative w-full max-w-md mt-5 mb-4  text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+        <div className="box-border flex flex-col items-center content-center  mx-auto leading-6 text-black  md:flex-row mb-10">
+          <div className="box-border relative w-full max-w-md mt-5 mb-4  text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-2/3 xl:pl-10">
             <img
               src="https://cdn.devdojo.com/images/december2020/productivity.png"
-              className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 mb-8"
+              className="p-2 pl-4 pr-5 xl:pl-16 xl:pr-20 mb-8"
               alt="name"
               style={{ width: "100%" }}
             />
           </div>
 
           {!isMobile && (
-            <div className="ml-5 mr-5 box-border order-first w-full text-black border-solid  mt-8">
+            <div className="ml-12 box-border order-first w-full text-black border-solid  mt-8">
               <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
                 Boost Productivity
               </h2>
-              <p className="pt-4 pb-8 m-0 leading-7 text-white border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+              <p className="pt-4 pb-8  leading-7 text-white border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
                 Achieving complete decentralization, P2P trading, transparency,
                 and optimal energy use fosters sustainability and self-reliance
                 in our energy system.
@@ -424,8 +427,8 @@ const LandingPage = () => {
       </section>
 
       {!isMobile && (
-        <section className="py-20 bg-black container mx-auto w-full ml-5 mr-5">
-          <div className="container items-center max-w-6xl px-8 mx-5">
+        <section className="py-20 bg-black container mx-auto w-full ml-2 mr-5">
+          <div className="container items-center px-8 mx-5">
             <div className="flex flex-wrap items-center -mx-3">
               <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
                 <div className="w-full lg:max-w-md">
@@ -497,7 +500,7 @@ const LandingPage = () => {
                   </ul>
                 </div>
               </div>
-              <div className="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0">
+              <div className="w-full  px-3 mb-12 md:w-1/3 order-0 lg:order-1 lg:mb-0">
                 <img
                   className="mx-auto sm:max-w-sm lg:max-w-full"
                   src="https://cdn.devdojo.com/images/november2020/feature-graphic.png"
