@@ -14,19 +14,19 @@ async function main() {
   await sleep(30 * 1000);
 
   // Verify the RektLock Contract
-  await hre.run("verify:verify", {
-    address: LoyalityToken.target,
-    contract: "contracts/LoayalityToken.sol:LoyalityToken",
-  });
+  // await hre.run("verify:verify", {
+  //   address: LoyalityToken.target,
+  //   contract: "contracts/LoayalityToken.sol:LoyalityToken",
+  // });
 
   console.log("Verified Loyality Token :", LoyalityToken.target);
 
   console.log("Verifying Unit Token ...");
 
-  await hre.run("verify:verify", {
-    address: UnitToken.target,
-    contract: "contracts/UnitToken.sol:UnitToken",
-  });
+  // await hre.run("verify:verify", {
+  //   address: UnitToken.target,
+  //   contract: "contracts/UnitToken.sol:UnitToken",
+  // });
 
   console.log("Verified Unit Token :", UnitToken.target);
 }
