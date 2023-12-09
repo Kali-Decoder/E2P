@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/base/Card.css";
 
 const Card = React.forwardRef(
