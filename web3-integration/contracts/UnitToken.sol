@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-contract LoyalityToken is ERC20Burnable, Ownable {
+contract UnitToken is ERC20Burnable, Ownable {
     constructor() ERC20("THOR", "TH") {
         mint(msg.sender, 10000);
     }
