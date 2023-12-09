@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { GiRollingEnergy } from "react-icons/gi";
 
 const Sidebar = () => {
   return (
@@ -14,10 +15,22 @@ const Sidebar = () => {
 
 <aside id="logo-sidebar" className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
    <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-      <a href="https://flowbite.com/" className="flex items-center ps-2.5 mb-5">
-         <img src="https://flowbite.com/docs/images/logo.svg" className="h-6 me-3 sm:h-7" alt="Flowbite Logo" />
-         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-      </a>
+   <div className="relative flex flex-col md:flex-row">
+              <a
+                href="/"
+                className="flex mt-4 flex-row items-center mb-5 font-bold text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
+              >
+                <GiRollingEnergy size={35} color="white" />
+                <span
+                  className="ml-2 mt-1 text-white select-none"
+                  style={{ fontSize: "25px" }}
+                >
+                  Eco
+                  <span className="text-indigo-800">-</span>
+                  <span className="text-indigo-600">GRiD</span>
+                </span>
+              </a>
+            </div>
       <ul className="space-y-2 font-medium">
          <li>
           <Link to='/user-dashboard' className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">         

@@ -62,8 +62,9 @@ const LandingPage = () => {
   return (
     <>
     
-      {!isTablet && (
+      {!isTablet && ( 
         <section className="w-full px-8 text-gray-700 bg-black overflow-x-hidden">
+          
           <div className=" flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-6xl">
             <div className="relative flex flex-col md:flex-row">
               <a
@@ -115,6 +116,7 @@ const LandingPage = () => {
       )}
       {isTablet && (
         <div className="bg-black p-4 flex justify-between items-center">
+          
           <div className="flex items-center">
             <GiRollingEnergy size={40} color="white" />
             {/* <span className="text-white text-lg font-semibold"></span> */}
@@ -136,6 +138,7 @@ const LandingPage = () => {
           {/* Mobile menu */}
           {menuOpen && (
             <div className="lg:hidden absolute top-16 right-4 bg-black p-2 rounded">
+              
               <div className="mb-4" onClick={toHome}>
                 <p className="text-2xl font-medium leading-6 text-gray-600">
                   Home
@@ -163,6 +166,7 @@ const LandingPage = () => {
 
       {!isMobile && (
         <section className="px-2 py-32 bg-black md:px-0 overflow-x-hidden ">
+          
           <div className="container items-center max-w-6xl px-8 mx-auto xl:px-5">
             <div className="flex flex-wrap justify-between items-center sm:-mx-3">
               <div className="w-full md:w-1/2 md:px-3">
@@ -214,6 +218,7 @@ const LandingPage = () => {
               </div>
               {!isTablet && (
                 <div className="w-full md:w-1/3 flex flex-end">
+                  
                   <div className="w-full  h-auto overflow-hidden rounded-sm">
                     <FaSuperpowers color="#00C5CD" size={400} />
                   </div>
@@ -226,6 +231,7 @@ const LandingPage = () => {
 
       {isMobile && (
         <section className="px-2 py-32 bg-black md:px-0 overflow-x-hidden ">
+          
           <div className="container items-center max-w-6xl px-4 ">
             <div className="flex flex-wrap justify-between items-center sm:-mx-3">
               <div className="w-full  md:px-3">
@@ -280,6 +286,7 @@ const LandingPage = () => {
         </section>
       )}
       <section className="w-full bg-black" id="features">
+        
         <div className="box-border flex flex-col items-center content-center  mx-auto leading-6 text-black  md:flex-row mb-10">
           <div className="box-border relative w-full max-w-md mt-5 mb-4  text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-2/3 xl:pl-10">
             <img
@@ -292,6 +299,7 @@ const LandingPage = () => {
 
           {!isMobile && (
             <div className="ml-12 box-border order-first w-full text-black border-solid  mt-8">
+              
               <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
                 Boost Productivity
               </h2>
@@ -335,6 +343,7 @@ const LandingPage = () => {
 
           {isMobile && (
             <div className=" ml-5 box-border order-first w-full  text-black border-solid md:w-1/2 md:pl-10 md:order-none mt-8">
+              
               <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
                 Boost Productivity
               </h2>
@@ -386,6 +395,7 @@ const LandingPage = () => {
         </div>
 
         <div className="box-border mb-10 flex flex-col items-center content-center px-8 mx-auto mt-5 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl">
+          
           <div className="box-border w-full text-black border-solid md:w-1/2 md:pl-6 ">
             <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
               Features Provides
@@ -428,6 +438,7 @@ const LandingPage = () => {
 
       {!isMobile && (
         <section className="py-20 bg-black container mx-auto w-full ml-2 mr-5">
+          
           <div className="container items-center px-8 mx-5">
             <div className="flex flex-wrap items-center -mx-3">
               <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
@@ -501,6 +512,7 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="w-full  px-3 mb-12 md:w-1/3 order-0 lg:order-1 lg:mb-0">
+              
                 <img
                   className="mx-auto sm:max-w-sm lg:max-w-full"
                   src="https://cdn.devdojo.com/images/november2020/feature-graphic.png"
@@ -514,6 +526,7 @@ const LandingPage = () => {
 
       {isMobile && (
         <section className="py-20 bg-black mr-5">
+          
           <div className=" items-center ">
             <div className="flex flex-wrap items-center -mx-3">
               <div className="order-1 w-full px-3 lg:order-0">
@@ -596,6 +609,7 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0">
+              
                 <img
                   className="mx-auto sm:max-w-sm lg:max-w-full"
                   src="https://cdn.devdojo.com/images/november2020/feature-graphic.png"
@@ -612,6 +626,7 @@ const LandingPage = () => {
           className="w-full ml-5 mr-5 section2 mx-auto bg-black flex justify-center items-center"
           id="usecases"
         >
+          
           <div className="features flex flex-wrap">
             <div className="tile real-time">
               <img
@@ -666,8 +681,9 @@ const LandingPage = () => {
       )}
 
       {isTablet && (
-        <div className=" items-center w-full ml-5 mr-5 justify-center mr-5 mt-20 mb-4 lg:flex">
-          <div className="flex flex-col mb-10 items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
+        <div className=" items-center w-full ml-5 justify-center mr-5 mt-20 mb-4 lg:flex">
+          
+          <div className="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
             <div className="flex items-center justify-center">
               <div className="w-16 h-16 mr-3 overflow-hidden ">
                 <img
@@ -688,7 +704,8 @@ const LandingPage = () => {
             </blockquote>
           </div>
 
-          <div className="flex flex-col mb-10 items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
+          <div className="flex flex-col  items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
+          
             <div className="flex items-center justify-center">
               <div className=" mr-3 overflow-hidden ">
                 <FiSun size={50} color="teal" />
@@ -743,6 +760,7 @@ const LandingPage = () => {
       )}
 
       <section className="flex items-center justify-center py-20 bg-black min-w-screen">
+      
         <div className="px-16 bg-black">
           <div className="container flex flex-col items-start mx-auto lg:items-center">
             <p className="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-purple-500 uppercase lg:justify-center lg:items-center">
@@ -825,6 +843,7 @@ const LandingPage = () => {
       </section>
 
       <section className="bg-black">
+      
         <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
           <nav className="flex flex-wrap justify-center -mx-5 -my-2">
             <div className="px-5 py-2">
