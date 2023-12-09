@@ -6,9 +6,8 @@ In addressing contemporary energy distribution challenges and envisioning the fu
 
 # Features
 
-- (✓) Cross-Border P2P Trading: Facilitates renewable energy exchange between different nations' grids.
-- (✓) P2G and G2P Transactions: Enables prosumers to sell excess energy to the grid and vice versa.
+- (✓) P2P Transactions: Enables prosumers to sell excess energy to the grid and vice versa.
 - (✓) Blockchain Trust: Utilizes blockchain for secure, transparent, and immutable transaction records.
 - (✓) Prosumer Empowerment: Empowers prosumers to actively engage in the energy market.
 - (✓) Real-time Monitoring: Monitors energy transactions and grid performance in real-time.
-- (✓) User can redeem their tokens anytime / Burn Tokens Implementation and Automated Settlements: Automates payment settlements for energy transactions.
+- (✓) Loyalty token: Sellers are provided with loyality tokens based on amount of energy they provided. 
