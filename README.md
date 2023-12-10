@@ -12,7 +12,13 @@ In addressing contemporary energy distribution challenges and envisioning the fu
 - (✓) Real-time Monitoring: Monitors energy transactions and grid performance in real-time.
 - (✓) Loyalty token: Sellers are provided with loyality tokens based on amount of energy they provided.
 
+# Flow Diagram
+![image](https://github.com/Kali-Decoder/E2P/assets/97343691/2f2a027a-2e97-4061-bb1a-33adf3047ee4)
+
+
+
 # Tech Stack
+
 + Javascript
 + Typescript
 + Polygon
