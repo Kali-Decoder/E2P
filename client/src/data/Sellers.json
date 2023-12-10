@@ -3,7 +3,7 @@
       {
         "id": "1",
         "name": "Raj Shaan",
-        "energyToTrade": "5",
+        "energyToTrade": "50KW",
         "walletAddress": "0xabcdef1234",
         "location": {
           "lat": "12.4",
@@ -14,7 +14,7 @@
       {
         "id": "2",
         "name": "Anna Johnson",
-        "energyToTrade": "8",
+        "energyToTrade": "80KW",
         "walletAddress": "0x5678efghij",
         "location": {
           "lat": "15.2",
@@ -25,7 +25,7 @@
       {
         "id": "3",
         "name": "Carlos Rodriguez",
-        "energyToTrade": "3",
+        "energyToTrade": "30KW",
         "walletAddress": "0xhijklmn123",
         "location": {
           "lat": "10.8",
@@ -36,7 +36,7 @@
       {
         "id": "4",
         "name": "Emily Smith",
-        "energyToTrade": "6",
+        "energyToTrade": "60KW",
         "walletAddress": "0xopqrstuvwx",
         "location": {
           "lat": "14.1",
@@ -47,7 +47,7 @@
       {
         "id": "5",
         "name": "David Lee",
-        "energyToTrade": "4",
+        "energyToTrade": "40KW",
         "walletAddress": "0xyzaabbccd",
         "location": {
           "lat": "11.5",
@@ -58,7 +58,7 @@
       {
         "id": "6",
         "name": "Sophie Brown",
-        "energyToTrade": "7",
+        "energyToTrade": "70KW",
         "walletAddress": "0x1234ijklmn",
         "location": {
           "lat": "16.7",
@@ -69,7 +69,7 @@
       {
         "id": "7",
         "name": "Michael Wang",
-        "energyToTrade": "2",
+        "energyToTrade": "20KW",
         "walletAddress": "0xqrst5678uv",
         "location": {
           "lat": "9.3",
@@ -80,7 +80,7 @@
       {
         "id": "8",
         "name": "Alicia Martinez",
-        "energyToTrade": "9",
+        "energyToTrade": "90KW",
         "walletAddress": "0x9876mnopqr",
         "location": {
           "lat": "17.4",
@@ -91,7 +91,7 @@
       {
         "id": "9",
         "name": "Daniel Kim",
-        "energyToTrade": "5",
+        "energyToTrade": "50KW",
         "walletAddress": "0xabcd5678ef",
         "location": {
           "lat": "12.9",
@@ -102,7 +102,7 @@
       {
         "id": "10",
         "name": "Linda Patel",
-        "energyToTrade": "3",
+        "energyToTrade": "30KW",
         "walletAddress": "0xefghijklmn",
         "location": {
           "lat": "11.2",
