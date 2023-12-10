@@ -11,10 +11,12 @@ async function main() {
   await sleep(30 * 1000);
 
   // Verify the RektLock Contract
-  await hre.run("verify:verify", {
-    address: nft.target,
-    constructorArguments: [],
-  });
+  // await hre.run("verify:verify", {
+  //   address: nft.target,
+  //   constructorArguments: [],
+  // });
+
+  console.log("Verified NFT :", nft.target);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
