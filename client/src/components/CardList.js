@@ -1,5 +1,5 @@
 import React from "react";
-import NFTCard from "./NFTCard";
+
 import "../styles/CardList.css";
 import { useNavigate } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
@@ -36,13 +36,7 @@ const CardList = ({ list, type = "horizontal" }) => {
           }, 4000); // same time
         }}
       > */}
-        {list.map((item, index) => (
-          <NFTCard
-            nftSrc={item.src}
-            key={index}
-            onClick={() => navigate("/detail", { state: { item: item } })}
-          />
-        ))}
+      
       {/* </Carousel> */}
     </div>
   );
