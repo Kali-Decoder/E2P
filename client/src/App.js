@@ -11,6 +11,7 @@ import InvoiceGenerator from "./components/InvoiceGenerator";
 import UserDashboard from "./pages/UserDashboard";
 import UserTransaction from "./pages/UserTransaction";
 import P2PMarketplace from "./pages/P2PMarketplace";
+import ExploreP2PMarketplace from "./pages/ExploreP2PMarketplace";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/marketplace" exact element={<MarketPlace />} />
         <Route path="/p2p-marketplace" exact element={<P2PMarketplace />} />
         <Route path="/explore" exact element={<Explore />} />
+        <Route path="/p2p-explore" exact element={<ExploreP2PMarketplace />} />
         <Route
           path="/:id/substations"
           exact

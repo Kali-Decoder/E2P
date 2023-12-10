@@ -5,8 +5,9 @@ import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import powerstations from "../data/powerstations.json";
-import PowerStationCard from "../components/PowerStationCard";
 import MemberCard from "../utils/MemberCard";
+import Sellers from "../data/Sellers.json";
+
 const P2PMarketplace = () => {
   let navigate = useNavigate();
   const topMostEfficeincyPlants = powerstations.powerstations.filter(
@@ -23,11 +24,11 @@ const P2PMarketplace = () => {
           />
         </Link>
       </div>
-      <Hero list={hotDropsData} text="P2P" />
+      <Hero list={hotDropsData} text="P2P" url="/p2p-explore" />
       <p id="card-list-header-text"> Most Trade Users </p>
 
       <div className="grid grid-cols-4 gap-4 mt-4 container mx-auto">
-        {topMostEfficeincyPlants.map((item, i) => {
+        {Sellers.sellers.slice(0,4).map((item, i) => {
           return <MemberCard item={item} key={i} />;
         })}
       </div>

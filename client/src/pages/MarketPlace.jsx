@@ -21,7 +21,7 @@ const Home = () => {
           />
         </Link>
       </div>
-      <Hero list={hotDropsData} />
+      <Hero list={hotDropsData} url="explore" />
       <p id="card-list-header-text"> Hot Power Plants </p>
       {topMostEfficeincyPlants.map((item, i) => {
         return <PowerStationCard item={item} key={i} />;

@@ -1,0 +1,115 @@
+{
+    "sellers": [
+      {
+        "id": "1",
+        "name": "Raj Shaan",
+        "energyToTrade": "5",
+        "walletAddress": "0xabcdef1234",
+        "location": {
+          "lat": "12.4",
+          "lot": "13"
+        },
+        "price": "5"
+      },
+      {
+        "id": "2",
+        "name": "Anna Johnson",
+        "energyToTrade": "8",
+        "walletAddress": "0x5678efghij",
+        "location": {
+          "lat": "15.2",
+          "lot": "17.5"
+        },
+        "price": "8"
+      },
+      {
+        "id": "3",
+        "name": "Carlos Rodriguez",
+        "energyToTrade": "3",
+        "walletAddress": "0xhijklmn123",
+        "location": {
+          "lat": "10.8",
+          "lot": "11.6"
+        },
+        "price": "3"
+      },
+      {
+        "id": "4",
+        "name": "Emily Smith",
+        "energyToTrade": "6",
+        "walletAddress": "0xopqrstuvwx",
+        "location": {
+          "lat": "14.1",
+          "lot": "15.9"
+        },
+        "price": "6"
+      },
+      {
+        "id": "5",
+        "name": "David Lee",
+        "energyToTrade": "4",
+        "walletAddress": "0xyzaabbccd",
+        "location": {
+          "lat": "11.5",
+          "lot": "13.7"
+        },
+        "price": "4"
+      },
+      {
+        "id": "6",
+        "name": "Sophie Brown",
+        "energyToTrade": "7",
+        "walletAddress": "0x1234ijklmn",
+        "location": {
+          "lat": "16.7",
+          "lot": "18.2"
+        },
+        "price": "7"
+      },
+      {
+        "id": "7",
+        "name": "Michael Wang",
+        "energyToTrade": "2",
+        "walletAddress": "0xqrst5678uv",
+        "location": {
+          "lat": "9.3",
+          "lot": "10.5"
+        },
+        "price": "2"
+      },
+      {
+        "id": "8",
+        "name": "Alicia Martinez",
+        "energyToTrade": "9",
+        "walletAddress": "0x9876mnopqr",
+        "location": {
+          "lat": "17.4",
+          "lot": "19.8"
+        },
+        "price": "9"
+      },
+      {
+        "id": "9",
+        "name": "Daniel Kim",
+        "energyToTrade": "5",
+        "walletAddress": "0xabcd5678ef",
+        "location": {
+          "lat": "12.9",
+          "lot": "14.6"
+        },
+        "price": "5"
+      },
+      {
+        "id": "10",
+        "name": "Linda Patel",
+        "energyToTrade": "3",
+        "walletAddress": "0xefghijklmn",
+        "location": {
+          "lat": "11.2",
+          "lot": "12.8"
+        },
+        "price": "4"
+      }
+    ]
+  }
+  

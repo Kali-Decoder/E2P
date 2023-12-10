@@ -3,11 +3,11 @@ import "../styles/Hero.css";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 
-const Hero = ({text}) => {
+const Hero = ({text,url}) => {
   let navigate = useNavigate();
  
-  const goExplore = () => {
-    navigate("/explore");
+  const goExplore = (url) => {
+    navigate(url);
   };
   const goCreate = () => {
     navigate("/create");
@@ -20,7 +20,7 @@ const Hero = ({text}) => {
       <h5 id="header-subtext" className="text-blue-400">Empowering Energy Transactions , <br/>Your Gateway to Sustainable Revenue.</h5>
 
       <div id="hero-buttons">
-        <button id="explore" onClick={goExplore}>
+        <button id="explore" onClick={()=>goExplore(url)}>
           Explore
         </button>
         <button id="create" onClick={goCreate}>Create</button>
