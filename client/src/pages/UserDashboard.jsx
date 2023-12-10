@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Dashboard from "./Dashboard";
+import Sidebar from "./Sidebar";
 
 const UserDashboard = () => {
   return (
-    <div>UserDashboard</div>
-  )
-}
+    <>
+      <Sidebar />
+      <Dashboard />
+    </>
+  );
+};
 
-export default UserDashboard
+export default UserDashboard;

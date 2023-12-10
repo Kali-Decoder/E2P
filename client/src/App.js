@@ -7,8 +7,10 @@ import Explore from "./pages/Explore";
 import SubstationMarketPlace from "./pages/SubstationMarketPlace";
 import MarketPlace from "./pages/MarketPlace";
 import RegisterUser from "./pages/RegisterUser";
-import UserDashboard from "./pages/UserDashboard";
 import InvoiceGenerator from "./components/InvoiceGenerator";
+import UserDashboard from "./pages/UserDashboard";
+import UserTransaction from "./pages/UserTransaction";
+import P2PMarketplace from "./pages/P2PMarketplace";
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
         <Route path="/auth" exact element={<Authscreen />} />
         <Route path="/register" exact element={<RegisterUser />} />
         <Route path="/user-dashboard" exact element={<UserDashboard/>} />
+        <Route path="/usertx" exact element={<UserTransaction/>} />
         <Route path="/marketplace" exact element={<MarketPlace />} />
+        <Route path="/p2p-marketplace" exact element={<P2PMarketplace />} />
         <Route path="/explore" exact element={<Explore />} />
         <Route
           path="/:id/substations"

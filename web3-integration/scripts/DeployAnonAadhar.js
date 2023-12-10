@@ -19,7 +19,7 @@ async function main() {
     [_verifierAddress, appId]
   );
   let anonContractAddress= await anonAadhaarVerifier.waitForDeployment();
-    console.log(`AnonAadharVerifier Address  ${anonContractAddress.target}`)
+    console.log(`AnonAadharContract Address  ${anonContractAddress.target}`)
   const _anonAadhaarVerifierAddress = verifier.target;
   console.log(`AnonAadharVerifier Address  ${await _anonAadhaarVerifierAddress}`);
 

@@ -3,7 +3,7 @@ import "../styles/Hero.css";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 
-const Hero = () => {
+const Hero = ({text}) => {
   let navigate = useNavigate();
  
   const goExplore = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div id="hero" className="flex justify-center items-center flex-col">
       <h1 id="header-text-first"> ⚡️ </h1>
-      <h1 id="header-text-second"> Energy Trade Marketplace</h1>
+      <h1 id="header-text-second"> {text} Energy Trade Marketplace</h1>
       <h5 id="header-subtext" className="text-blue-400">Empowering Energy Transactions , <br/>Your Gateway to Sustainable Revenue.</h5>
 
       <div id="hero-buttons">

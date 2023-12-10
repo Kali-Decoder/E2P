@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract TokenMartNFT is ERC721URIStorage, Ownable {
+contract EnergyNFT is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     constructor() ERC721("Energy2Peer", "E2P") {}
@@ -20,3 +20,4 @@ contract TokenMartNFT is ERC721URIStorage, Ownable {
         _setTokenURI(newItemId, tokenURI);
     }
 }
+

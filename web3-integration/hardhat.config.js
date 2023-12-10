@@ -26,6 +26,10 @@ module.exports = {
       url: "https://sepolia-rpc.scroll.io/",
       accounts: [PRIVATE_KEY],
     },
+    BaseSepolia:{
+      url: "https://sepolia.base.org",
+      accounts: [PRIVATE_KEY],
+    }
   },
   etherscan: {
     apiKey: POLYGON_API_KEY,

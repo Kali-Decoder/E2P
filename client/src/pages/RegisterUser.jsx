@@ -11,7 +11,7 @@ const RegisterUser = () => {
 //     if (anonAadhaar.status === "logged-in") setPcd(anonAadhaar.pcd);
 //   }, [anonAadhaar]);
   const [selectedFile, setSelectedFile] = useState("");
-  const { onRegisterUser, confetti } = useUserDataContext();
+  const { registerUser, confetti } = useUserDataContext();
 
 
 
@@ -178,7 +178,7 @@ const RegisterUser = () => {
             <ConnectButton />
           </div>
           <button
-            onClick={()=>onRegisterUser()}
+            onClick={()=>registerUser()}
             className="form-input font-bold w-full mt-5 rounded-lg  text-white focus:outline-none
                    [ p-3 md:p-4 lg:p-4 ] 
                    [ transition-colors duration-500 ] 
@@ -189,6 +189,9 @@ const RegisterUser = () => {
           )
         </div>
       </div>
+
+
+     
     </>
   );
 };

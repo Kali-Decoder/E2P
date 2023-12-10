@@ -11,18 +11,22 @@ import { WagmiConfig } from "wagmi";
 import { UserContextProvider } from "./context/DataContext.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AnonAadhaarProvider } from "anon-aadhaar-react";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <WagmiConfig config={wagmiConfig}>
-       <RainbowKitProvider chains={chains}>
-      <BrowserRouter>
-      <UserContextProvider>
-        <ToastContainer />
-        <App />
-        </UserContextProvider>
+      <RainbowKitProvider chains={chains}>
+        <BrowserRouter>
+          <AnonAadhaarProvider _appId="335504977811969321929009432145820925281540505600" _testing={false}>
+            <UserContextProvider>
+              <ToastContainer />
+              <App />
+            </UserContextProvider>
+          </AnonAadhaarProvider>
         </BrowserRouter>
-        </RainbowKitProvider>
+      </RainbowKitProvider>
     </WagmiConfig>
   </React.StrictMode>
 );

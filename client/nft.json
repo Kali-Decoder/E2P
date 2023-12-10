@@ -1,0 +1,10 @@
+{
+    "name": "Energy 2 Peer",
+    "description": "Energy 2 Peer is a decentralized energy trading platform that allows users to buy and sell energy from each other.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmXLH8WHLkZMdionP7tqJq6H8awW18CgWAdf4zy5YW58Lb",
+    "attributes": [{
+        "display_type": "bool",
+        "trait_type": "Verified",
+        "value": true
+    }]
+}
