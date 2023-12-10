@@ -23,6 +23,7 @@ function App() {
         <BackGradients page="home" />
         </div>
         </>} />
+        
         <Route path="/auth" exact element={<Authscreen />} />
         <Route path="/register" exact element={<RegisterUser />} />
         <Route path="/user-dashboard" exact element={<UserDashboard/>} />
@@ -36,6 +37,7 @@ function App() {
           element={<SubstationMarketPlace />}
         />
         <Route path="/invoice" exact element={<InvoiceGenerator/>}/>
+        <Route path="/usertx" exact element={<UserTransaction/>} />
       </Routes>
       
     </>
