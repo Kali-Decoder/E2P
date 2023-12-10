@@ -31,7 +31,7 @@ In addressing contemporary energy distribution challenges and envisioning the fu
 
 **NFT**:0xd2100Ce4ad92346cCb9811C500D403dc75d75687
 
-## Alfajores(Cello) :
+## Alfajores(Celo) :
 
 **AnonContract Address** :  0x394b899AAb17EfCF200AA3F9ce12F6fDf740E6Aa
 
